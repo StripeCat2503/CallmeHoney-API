@@ -10,7 +10,11 @@ app.get('/', (req, res) =>{
     res.send('Welcome to CallmeHoney API');
 })
 app.get('/access-token', (req, res) =>{
-    res.send(getAccessToken());
+    res.send({
+        message: 'Success',
+        status: 200,
+        token: getAccessToken()
+    });
 })
 
 app.listen(PORT, () => {
