@@ -1,0 +1,19 @@
+{
+  "name": "callme-api",
+  "version": "1.0.0",
+  "description": "Call me connect Stringee API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "DuyNK",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
