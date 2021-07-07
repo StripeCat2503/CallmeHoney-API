@@ -1,4 +1,4 @@
-const PORT = 3500;
+const PORT = process.env.PORT || 3500;
 
 const express = require('express');
 const getAccessToken = require('./authentication');
