@@ -1,7 +1,7 @@
 const apiKeySid = 'SK0V6qlaj0b7782aLGynXFKCdeFhe2QMsb';
 const apiKeySecret = 'bzVZY2t0R1lqaldLQnhwaWFSQ1JlWWgyazVtU1JvZw==';
 
-function getAccessToken() {
+function getAccessToken(userId) {
 	var now = Math.floor(Date.now() / 1000);
 	var exp = now + 3600;
 
@@ -10,7 +10,7 @@ function getAccessToken() {
 		jti: apiKeySid + "-" + now,
 		iss: apiKeySid,
 		exp: exp,
-		rest_api: true
+		userId: userId
 	};
 
 	var jwt = require('jsonwebtoken');

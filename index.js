@@ -13,7 +13,7 @@ app.get('/access-token', (req, res) =>{
     res.send({
         message: 'Success',
         status: 200,
-        token: getAccessToken()
+        token: getAccessToken(req.query.userId)
     });
 })
 
