@@ -6,6 +6,9 @@ const getAccessToken = require('./authentication');
 const app = express();
 
 // routes
+app.get('/', (req, res) =>{
+    res.send('Welcome to CallmeHoney API');
+})
 app.get('/access-token', (req, res) =>{
     res.send(getAccessToken());
 })
